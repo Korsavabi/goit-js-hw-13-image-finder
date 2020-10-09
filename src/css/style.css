@@ -1,0 +1,74 @@
+body{
+  background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-misctexture01-tong-019-chim-02_1_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2c732ce5066026b4fe5ca5d78abbe706');
+}
+img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+#query{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 5px 20px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+.gallery{
+  list-style: none;
+  display: flex;
+  align-items: inherit;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.stats{
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: baseline;
+  background-color: gray;
+  margin-right: 30px;
+}
+.gallery-item{
+  width: calc((100% - 120px)/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.photo-box{
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+.stats-item{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  /* color: red; */
+  /* padding: 5px 10px; */
+  color: white;
+} 
+.stats-item i{
+  padding-right: 10px;
+}
+.stats-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.loadMore-btn, .clear-btn{
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-size: 28px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clear-btn{
+  margin: 50px auto;
+}
+.hiden{
+
+  display: none;
+}

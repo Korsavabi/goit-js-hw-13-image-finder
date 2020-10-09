@@ -1,0 +1,34 @@
+{{#each this}}
+<li class="gallery-item">
+  <div class="photo-card">
+    <div class="photo-box">
+      <img src="{{webformatURL}}" alt="{{user}}" data-src="{{largeImageURL}}" data-index="{{@index}}" alt="" width="{{webformatWidth}}" height="{{webformatHeight}}" />
+    </div>
+
+    <div class="stats">
+      <p class="stats-item">
+        <i class="material-icons">thumb_up</i>
+        {{likes}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">visibility</i>
+        {{views}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">comment</i>
+        {{comments}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">cloud_download</i>
+        {{downloads}}
+      </p>
+    </div>
+  </div>
+</li>
+{{/each}}
+{{!-- webformatURL - ссылка на маленькое изображение для списка карточек
+largeImageURL - ссылка на большое изображение (смотри пункт 'дополнительно')
+likes - количество лайков
+views - количество просмотров
+comments - количество комментариев
+downloads - количество загрузок --}}
